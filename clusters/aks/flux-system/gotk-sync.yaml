@@ -25,7 +25,3 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
