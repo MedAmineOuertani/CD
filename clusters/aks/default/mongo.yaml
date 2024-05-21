@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mongodb-deployment-2
+  name: mongodb-deployment
   namespace : default
   labels: 
     apps: mongodb 
