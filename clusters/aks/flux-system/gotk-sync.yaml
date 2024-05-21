@@ -20,8 +20,12 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m0s
-  path: ./clusters/aks
+  path: ./clusters/aks/default
   prune: true
   sourceRef:
     kind: GitRepository
     name: flux-system
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
